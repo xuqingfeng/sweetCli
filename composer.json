@@ -1,0 +1,20 @@
+{
+	"name": "sweet/cli",
+	"description": "beautify php cli in bash",
+	"license": "GPLv3",
+	"authors": [
+		{
+			"name": "xuqingfeng",
+			"email": "js-xqf@hotmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Sweet\\": "src"
+		}
+	}
+}
