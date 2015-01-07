@@ -123,7 +123,7 @@ class Cli {
                 $completed = self::$foregroundColors['green'] . str_repeat("#", $step) . self::$styleEnd;
                 $left = str_repeat(".", 10 - $step);
                 $bar = "\0338[" . $completed . $left . "]$percent%";
-                fwrite(STDOUT, $bar);
+                fwrite(STDOUT, $bar . self::$lineEnd);
                 if (100 == $percent) {
                     fwrite(STDOUT, self::$lineEnd);
                 }
