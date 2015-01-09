@@ -104,7 +104,7 @@ class Cli {
      * @param $string
      * @return string
      */
-    public static function info($string){
+    public static function info($string) {
 
         return self::stylize($string, 'cyan');
     }
