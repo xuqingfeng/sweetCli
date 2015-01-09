@@ -28,12 +28,12 @@ class Cli {
         'magenta'          => "\033[0;35m",
         'lightMagenta'     => "\033[1;35m",
         'underlineMagenta' => "\033[4;35m",
-        'cyan'             => "\033[0;35m",
-        'lightCyan'        => "\033[1;35m",
-        'underlineCyan'    => "\033[4;35m",
-        'white'            => "\033[0;36m",
-        'lightWhite'       => "\033[1;36m",
-        'underlineWhite'   => "\033[4;36m"
+        'cyan'             => "\033[0;36m",
+        'lightCyan'        => "\033[1;36m",
+        'underlineCyan'    => "\033[4;36m",
+        'white'            => "\033[0;37m",
+        'lightWhite'       => "\033[1;37m",
+        'underlineWhite'   => "\033[4;37m"
     );
 
     public static $backgroundColors = array(
@@ -98,6 +98,15 @@ class Cli {
     public static function primary($string) {
 
         return self::stylize($string, 'blue');
+    }
+
+    /**
+     * @param $string
+     * @return string
+     */
+    public static function info($string){
+
+        return self::stylize($string, 'cyan');
     }
 
     /**
