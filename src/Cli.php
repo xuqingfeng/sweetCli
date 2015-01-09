@@ -68,7 +68,7 @@ class Cli {
             $stylizedString .= self::$backgroundColors[$backgroundColor];
         }
 
-        $stylizedString .= $string . self::$styleEnd . self::$lineEnd;
+        $stylizedString .= $string . self::$styleEnd;
 
         return $stylizedString;
     }
@@ -123,7 +123,7 @@ class Cli {
                 $completed = self::$foregroundColors['green'] . str_repeat("#", $step) . self::$styleEnd;
                 $left = str_repeat(".", 10 - $step);
                 $bar = "\0338[" . $completed . $left . "]$percent%";
-                fwrite(STDOUT, $bar . self::$lineEnd);
+                fwrite(STDOUT, $bar);
                 if (100 == $percent) {
                     fwrite(STDOUT, self::$lineEnd);
                 }
