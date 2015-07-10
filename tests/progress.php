@@ -1,6 +1,7 @@
 <?php
 
-require_once __DIR__ . "/../src/Cli.php";
+$loader = require __DIR__."/../vendor/autoload.php";
+$loader->add('Sweet\Cli', __DIR__);
 
 use Sweet\Cli;
 
