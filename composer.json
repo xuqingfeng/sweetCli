@@ -1,7 +1,7 @@
 {
 	"name": "sweet/cli",
 	"description": "beautify php cli in bash",
-	"license": "GPLv3",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "xuqingfeng",

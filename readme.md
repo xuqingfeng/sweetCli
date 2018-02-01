@@ -1,9 +1,7 @@
-##sweetCli
->beautify php cli in bash
+## sweetCli
+> beautify php cli in bash
 
-You may want to check out the [doc](https://xuqingfeng.github.io/doc/sweetCli/)
-
-###Better Solutions
+### Better Solutions
 
 [https://github.com/PeterDaveHello/ColorEchoForShell](https://github.com/PeterDaveHello/ColorEchoForShell)
 
